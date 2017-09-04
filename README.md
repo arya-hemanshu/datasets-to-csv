@@ -10,3 +10,6 @@ The file needs to be fixed for treating an unseen tag in previous hierarchies an
 For Example:
 
 need to provide example
+
+# Execution
+python read_json_2.py /path/to/file.json /path/to/output.csv
