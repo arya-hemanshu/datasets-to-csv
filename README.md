@@ -13,3 +13,8 @@ need to provide example
 
 # Execution
 python read_json_2.py /path/to/file.json /path/to/output.csv
+
+# pre-requisites
+pandas library
+
+pip install pandas
