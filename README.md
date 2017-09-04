@@ -1,4 +1,4 @@
-# datasets-to-csv
+# datasetsformat-to-csv
 Convert datasets of JSON and XML format to CSV
 
 # read_json_2.py
