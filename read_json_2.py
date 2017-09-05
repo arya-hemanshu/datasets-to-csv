@@ -115,12 +115,16 @@ def record_max_length():
 
 def main(args):
     global data_frame
+    global temp_array
+    global primary_key
     if len(args) < 2:
         print('Source and Destination file name and path required')
         sys.exit(0)
     else:
         data = args[0]
         normalize_json_to_tabular_format(data)
+        temp_array.append(primary_key)
+        check_copy_values_to_last_level_tags()
         data_frame = pd.DataFrame.from_dict(values, orient='index')
         data_frame = data_frame.transpose()
         data_frame.to_csv(args[1])
